@@ -61,11 +61,11 @@ header a {
 /* HERO */
 
 .hero {
-  background-image: url("../img/banner.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/banner.jpg");
   background-size: cover;
   background-position: center;
   background-color: rgba(0, 0, 0, 0.4);
-  background-blend-mode: darken;
   height: 60vh;
   display: flex;
   align-items: center;
@@ -76,6 +76,7 @@ header a {
 .logo-hero img {
   height: 40%;
   width: auto;
+
   object-fit: cover;
   position: absolute;
   top: 50%;
