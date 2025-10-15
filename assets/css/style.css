@@ -1,0 +1,267 @@
+@font-face {
+  font-family: "Cinzel-Regular";
+  src: url(../fonts/Cinzel/Cinzel/static/Cinzel-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Cinzel-SemiBold";
+  src: url(../fonts/Cinzel/Cinzel/static/Cinzel-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: "Cinzel-Bold";
+  src: url(../fonts/Cinzel/Cinzel/static/Cinzel-Bold.ttf);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Cinzel-Regular";
+}
+
+/* HEADER */
+
+header {
+  background-color: #0b0c10;
+  height: 4%;
+  box-shadow: 4px 4px 4px #0b0c10;
+}
+
+header,
+nav,
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header ul {
+  list-style: none;
+  padding: 0;
+  gap: 10%;
+}
+
+header a {
+  text-decoration: none;
+  color: white;
+}
+
+/* HERO */
+
+.hero {
+  background-image: url("../img/banner.jpg");
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  background-blend-mode: darken;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.logo-hero img {
+  height: 40%;
+  object-fit: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* INTRODUCTION #BB9959*/
+
+.main {
+  background-color: #0b0c10;
+  min-width: 100vw;
+}
+
+.main-container {
+  background-color: #0b0c10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.introduction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  padding-bottom: 6%;
+}
+
+h1 {
+  color: white;
+  margin: 6% 0% 0% 0%;
+  font-size: 3.5rem;
+}
+.introduction h2 {
+  color: #eccfa3;
+  margin: 0% 0% 2% 0%;
+}
+
+.introduction p {
+  color: white;
+  text-align: center;
+  line-height: 30px;
+  margin-bottom: 5%;
+}
+
+.know-more {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+  height: 40px;
+  border-radius: 7px;
+  background: linear-gradient(#c0ac88, #b18c45);
+}
+
+/* ACTUALITY #ECCFA3 #11151C*/
+
+.actuality {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 60%;
+  padding-bottom: 3%;
+}
+
+.actuality h2 {
+  color: #eccfa3;
+  text-align: center;
+}
+
+.card-container {
+  display: flex;
+  gap: 5%;
+}
+
+.card {
+  color: white;
+  width: 30%;
+  background-color: #11151c;
+  border-radius: 7px;
+  border: 2px solid rgb(53, 53, 63);
+  overflow: hidden;
+}
+
+.card .card-img {
+  width: 100%;
+  height: 200px;
+}
+
+.card .card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-paragraphe {
+  padding: 5% 2% 20% 2%;
+}
+
+/* NEWS LETTER */
+
+.news-letter {
+  padding: 5%;
+  background-color: #11151c;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-top: 2px solid rgb(53, 53, 63);
+}
+
+.news-letter h2 {
+  color: #c0ac88;
+  margin: 0;
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+  gap: 3%;
+}
+
+.email {
+  width: 350px;
+  background-color: #0b0c10;
+  color: gray;
+  border: solid 1px darkslategrey;
+  border-radius: 7px;
+  padding-left: 10px;
+  height: 35px;
+}
+
+.news-letter .btn-submit {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 10%;
+  padding-right: 10%;
+  height: 40px;
+  border-radius: 7px;
+  font-weight: bold;
+  background: linear-gradient(#c0ac88, #b18c45);
+}
+
+/* FOOTER */
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #0b0c10;
+  height: 10vh;
+  border-top: 1px solid darkslategrey;
+}
+
+footer ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+  padding: 0;
+}
+
+footer li {
+  border-right: 1px solid white;
+  padding-right: 20px;
+}
+
+footer li:last-child {
+  border-right: none;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+  font-size: 0.8rem;
+  height: 200px;
+}
+
+footer .img-footer-container {
+  max-width: 200px;
+  max-height: 200px;
+  padding: 0;
+  margin: 0;
+}
+
+footer .img-footer-container img {
+  max-width: 65%;
+  max-height: 65%;
+  object-fit: cover;
+  padding: 0;
+  margin: 0;
+}
