@@ -61,11 +61,9 @@ header a {
 /* HERO */
 
 .hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../img/banner.jpg");
+  background-image: url("../img/banner.jpg");
   background-size: cover;
   background-position: center;
-  background-color: rgba(0, 0, 0, 0.4);
   height: 60vh;
   display: flex;
   align-items: center;
@@ -73,10 +71,17 @@ header a {
   position: relative;
 }
 
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
 .logo-hero img {
   height: 40%;
   width: auto;
-
+  z-index: 2;
   object-fit: cover;
   position: absolute;
   top: 50%;
@@ -261,7 +266,7 @@ footer {
   justify-content: space-around;
   align-items: center;
   background-color: #0b0c10;
-
+  padding-top: 10px;
   border-top: 1px solid darkslategrey;
 }
 
