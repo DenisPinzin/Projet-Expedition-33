@@ -32,6 +32,10 @@ header {
   z-index: 3;
 }
 
+.menu {
+  display: none;
+}
+
 header,
 nav,
 header ul {
@@ -223,7 +227,7 @@ form {
 }
 
 .email {
-  width: 350px;
+  width: 18.23vw;
   background-color: #0b0c10;
   color: gray;
   border: solid 1px darkslategrey;
@@ -315,4 +319,93 @@ footer .img-footer-container img {
   object-fit: cover;
   padding: 0;
   margin: 0;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 768px) {
+  header {
+    justify-content: end;
+  }
+
+  .menu {
+    display: flex;
+    max-height: 100%;
+    width: 10%;
+    margin-right: 4%;
+  }
+
+  .menu img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  nav {
+    display: none;
+  }
+
+  h1,
+  h2 {
+    text-align: center;
+  }
+
+  .know-more {
+    padding: 1% 20% 1%;
+    text-align: center;
+    width: 40%;
+  }
+
+  .card {
+    width: 100%;
+    margin-bottom: 4%;
+  }
+
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 70%;
+  }
+
+  .email {
+    width: 100%;
+    padding: 0px;
+  }
+
+  footer {
+    flex-direction: column;
+  }
+
+  .img-footer-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  footer ul {
+    flex-direction: column;
+  }
+
+  footer li {
+    border: none;
+    padding-right: 0px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  .logo-hero img {
+    height: 20%;
+  }
 }
