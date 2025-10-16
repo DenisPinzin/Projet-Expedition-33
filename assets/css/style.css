@@ -140,13 +140,12 @@ h1 {
   height: 40px;
   border-radius: 7px;
   background: linear-gradient(#c0ac88, #b18c45);
-  transition: margin-top 0s;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .know-more:hover {
+  transform: translateY(-2px);
   box-shadow: 0 3px 10px -3px white;
-  margin-top: -2px;
-  margin-bottom: 2px;
 }
 
 /* ACTUALITY #ECCFA3 #11151C*/
@@ -176,12 +175,13 @@ h1 {
   border-radius: 7px;
   border: 2px solid rgb(53, 53, 63);
   overflow: hidden;
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 .card:hover {
-  border: 2px solid gray;
-  margin-top: -2px;
-  margin-bottom: 2px;
+  transform: translateY(-3px);
+  border-color: darkslategrey;
+  box-shadow: 0 3px 10px -3px rgba(255, 255, 255, 0.3);
 }
 
 .card .card-img {
@@ -230,12 +230,13 @@ form {
   border-radius: 7px;
   padding-left: 10px;
   height: 35px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .email:focus {
   outline: none !important;
-  border: solid 1px #b18c45;
-  filter: drop-shadow(0 0 0.07rem white);
+  border-color: #b18c45;
+  box-shadow: 0 0 5px #b18c45;
 }
 
 .news-letter .btn-submit {
